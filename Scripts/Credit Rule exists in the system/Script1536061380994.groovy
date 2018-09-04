@@ -19,11 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/span_rkulkarncalliduscloud.com'))
-
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/div_Logout'))
-
-WebUI.closeBrowser()
-

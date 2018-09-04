@@ -19,11 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/span_rkulkarncalliduscloud.com'))
+WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/div_Logout'))
+WebUI.delay(3)
 
-WebUI.closeBrowser()
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'), 9)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'USD')
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+
+WebUI.delay(3)
+
+WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
