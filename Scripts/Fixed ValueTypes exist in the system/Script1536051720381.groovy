@@ -22,15 +22,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.delay(3)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
+WebUI.delay(3)
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Fixed Value Types'), 6)
+
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Fixed Value Types'))
+
+WebUI.delay(3)
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'Fix1')
 
-WebUI.sendKeys(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), Keys.chord(Keys.ENTER))
-
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+
+WebUI.delay(3)
+
+WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

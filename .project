@@ -53,6 +53,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1536055959610</id>
 			<name></name>
 			<type>10</type>
@@ -63,6 +64,18 @@
 		</filter>
 		<filter>
 			<id>1536055959610</id>
+=======
+			<id>1536054308807</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1536054308823</id>
+>>>>>>> branch 'master' of https://github.com/sanjeevraoinno/UAT_Commission.git
 			<name></name>
 			<type>6</type>
 			<matcher>

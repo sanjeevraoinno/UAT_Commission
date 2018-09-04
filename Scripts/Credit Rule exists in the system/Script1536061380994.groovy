@@ -19,17 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
-
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
-
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'Test PG')
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
-
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-

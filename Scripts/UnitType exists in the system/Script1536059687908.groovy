@@ -23,13 +23,19 @@ WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_O
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'), 9)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'Test PG')
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'USD')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+
+WebUI.delay(3)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
