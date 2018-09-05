@@ -21,15 +21,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
+WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Plans'), 2)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'commission')
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Plans'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'compensation plan', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

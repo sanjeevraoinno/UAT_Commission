@@ -23,13 +23,31 @@ WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_O
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Credit Types'), 2)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'commission')
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Credit Types'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_credit types id'), 2)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_credit types id'))
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), "Bonus")
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

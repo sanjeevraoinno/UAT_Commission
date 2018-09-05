@@ -24,19 +24,9 @@ WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_O
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Event Types'), 3)
-
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Event Types'))
-
-WebUI.delay(3)
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'invoicing')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
-
-WebUI.delay(3)
-
-WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -21,8 +21,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/span_rkulkarncalliduscloud.com'))
 
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/div_Logout'))
 
 WebUI.closeBrowser()
