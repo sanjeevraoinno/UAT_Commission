@@ -8,21 +8,21 @@
    <variable>
       <defaultValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</defaultValue>
       <description></description>
-      <id>995d7897-9910-433d-885e-009df58ed4c0</id>
+      <id>2e333e51-f129-44cc-9f09-ead7fe8a0e4d</id>
       <masked>false</masked>
       <name>CallidusPortalUrl</name>
    </variable>
    <variable>
       <defaultValue>'rkulkarn@calliduscloud.com'</defaultValue>
       <description></description>
-      <id>44b33a24-f681-4764-bab0-f28834c93067</id>
+      <id>d6a39511-4b97-4349-9635-6e8017dfb8ac</id>
       <masked>false</masked>
       <name>CallidusUser</name>
    </variable>
    <variable>
       <defaultValue>'Augg@1234'</defaultValue>
       <description></description>
-      <id>f8f77625-c109-4fbc-aae8-c28053601f9b</id>
+      <id>d8c5cfaa-be90-436b-8e6a-3fd4b60312fd</id>
       <masked>false</masked>
       <name>CallidusPassword</name>
    </variable>
