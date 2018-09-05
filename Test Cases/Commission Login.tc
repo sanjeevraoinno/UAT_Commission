@@ -5,4 +5,25 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ea96b448-7ddc-4f70-a335-c00fe184b5d3</testCaseGuid>
+   <variable>
+      <defaultValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</defaultValue>
+      <description></description>
+      <id>0f28d234-4de4-440f-be8c-d317df5015df</id>
+      <masked>false</masked>
+      <name>CallidusURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'sanrao@calliduscloud.com'</defaultValue>
+      <description></description>
+      <id>bc92b8df-4bac-4141-91c7-3d19567413bf</id>
+      <masked>false</masked>
+      <name>User</name>
+   </variable>
+   <variable>
+      <defaultValue>'India987&amp;'</defaultValue>
+      <description></description>
+      <id>8e22a88a-31cc-43e7-a237-76f30fe4aba4</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
 </TestCaseEntity>

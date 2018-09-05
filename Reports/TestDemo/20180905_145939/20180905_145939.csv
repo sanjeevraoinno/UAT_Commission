@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestDemo,Chrome 68.0.3440.106,,2018-09-05 14:59:42,2018-09-05 15:00:04,22.112s,FAILED
+,,,,,,
+Test Cases/Commission Login,Chrome 68.0.3440.106,,2018-09-05 14:59:43,2018-09-05 15:00:03,19.867s,FAILED
+openBrowser,Chrome 68.0.3440.106,,2018-09-05 14:59:43,2018-09-05 14:59:49,5.404s,PASSED
+navigateToUrl,Chrome 68.0.3440.106,,2018-09-05 14:59:49,2018-09-05 15:00:00,11.557s,PASSED
+maximizeWindow,Chrome 68.0.3440.106,,2018-09-05 15:00:00,2018-09-05 15:00:01,1.177s,PASSED
+setText,Chrome 68.0.3440.106,,2018-09-05 15:00:01,2018-09-05 15:00:02,0.649s,PASSED
+setEncryptedText,Chrome 68.0.3440.106,,2018-09-05 15:00:02,2018-09-05 15:00:03,0.517s,FAILED

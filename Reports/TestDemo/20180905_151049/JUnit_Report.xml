@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestDemo" time="52" tests="2" failures="0" errors="0">
+   <testsuite name="TestDemo" tests="2" failures="0" errors="0" time="52" timestamp="2018-09-05 15:10:51" hostname="sanrao - 1971WS1-E6330.callidussoftware.com" id="Test Suites/TestDemo">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_151049"/>
+         <property name="logFiles" value="C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_151049\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sanrao - 1971WS1-E6330.callidussoftware.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.6.3.1"/>
+         <property name="browser" value="Chrome 68.0.3440.106"/>
+         <property name="hostAddress" value="192.168.245.13"/>
+         <property name="sessionId" value="b396dd7acc2cbd2160da52fdbef761af"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Commission Login" classname="Test Cases/Commission Login" status="PASSED">
+         <system-out><![CDATA[2018-09-05 15:10:51 - [TEST_CASE][PASSED] - Test Cases/Commission Login: Test Cases/Commission Login
+
+2018-09-05 15:10:52 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-09-05 15:10:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-09-05 15:10:56 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/' successfully
+
+2018-09-05 15:11:08 - [MESSAGE][PASSED] - Navigate to 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/' successfully
+
+2018-09-05 15:11:08 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-09-05 15:11:09 - [MESSAGE][PASSED] - Current window maximized
+
+2018-09-05 15:11:09 - [TEST_STEP][PASSED] - setText: Text 'sanrao@calliduscloud.com' is set on object 'Object Repository/Page_Sales Performance Home/input_username'
+
+2018-09-05 15:11:09 - [MESSAGE][PASSED] - Text 'sanrao@calliduscloud.com' is set on object 'Object Repository/Page_Sales Performance Home/input_username'
+
+2018-09-05 15:11:09 - [TEST_STEP][PASSED] - setText: Text 'India987&' is set on object 'Object Repository/Page_Sales Performance Home/input_password'
+
+2018-09-05 15:11:10 - [MESSAGE][PASSED] - Text 'India987&' is set on object 'Object Repository/Page_Sales Performance Home/input_password'
+
+2018-09-05 15:11:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Sales Performance Home/button_Login' is clicked on
+
+2018-09-05 15:11:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Sales Performance Home/button_Login' is clicked on
+
+2018-09-05 15:11:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Sales Performance Home/span_Sales Performance Home' is clicked on
+
+2018-09-05 15:11:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Sales Performance Home/span_Sales Performance Home' is clicked on
+
+2018-09-05 15:11:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Sales Performance Home/a_Commissions' is clicked on
+
+2018-09-05 15:11:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Sales Performance Home/a_Commissions' is clicked on
+
+2018-09-05 15:11:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Callidus Cloud Commissions Man/a_Manage Setup' is clicked on
+
+2018-09-05 15:11:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Callidus Cloud Commissions Man/a_Manage Setup' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Commission Logout" classname="Test Cases/Commission Logout" status="PASSED">
+         <system-out><![CDATA[2018-09-05 15:11:38 - [TEST_CASE][PASSED] - Test Cases/Commission Logout: Test Cases/Commission Logout
+
+2018-09-05 15:11:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Callidus Cloud Commissions Man/span_rkulkarncalliduscloud.com' is clicked on
+
+2018-09-05 15:11:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Callidus Cloud Commissions Man/span_rkulkarncalliduscloud.com' is clicked on
+
+2018-09-05 15:11:39 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-09-05 15:11:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-09-05 15:11:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Callidus Cloud Commissions Man/div_Logout' is clicked on
+
+2018-09-05 15:11:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Callidus Cloud Commissions Man/div_Logout' is clicked on
+
+2018-09-05 15:11:43 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-09-05 15:11:43 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-09-05 15:10:51 - [TEST_SUITE][PASSED] - TestDemo: Test Cases/Commission Logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

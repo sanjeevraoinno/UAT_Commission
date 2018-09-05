@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestDemo" time="22" tests="0" failures="1" errors="0">
+   <testsuite name="TestDemo" tests="0" failures="1" errors="0" time="22" timestamp="2018-09-05 14:59:42" hostname="sanrao - 1971WS1-E6330.callidussoftware.com" id="Test Suites/TestDemo">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_145939"/>
+         <property name="logFiles" value="C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_145939\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_145939\\1536139802733.png"/>
+         <property name="hostName" value="sanrao - 1971WS1-E6330.callidussoftware.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.6.3.1"/>
+         <property name="browser" value="Chrome 68.0.3440.106"/>
+         <property name="hostAddress" value="192.168.245.13"/>
+         <property name="sessionId" value="2f3f15fdecb59f70017283b77315a805"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Commission Login" classname="Test Cases/Commission Login" status="FAILED">
+         <failure type="FAILED" message="Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)"/>
+         <system-out><![CDATA[2018-09-05 14:59:43 - [TEST_CASE][FAILED] - Test Cases/Commission Login: Test Cases/Commission Login FAILED because (of) Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)
+
+2018-09-05 14:59:43 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-09-05 14:59:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-09-05 14:59:49 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/' successfully
+
+2018-09-05 15:00:00 - [MESSAGE][PASSED] - Navigate to 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/' successfully
+
+2018-09-05 15:00:00 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-09-05 15:00:01 - [MESSAGE][PASSED] - Current window maximized
+
+2018-09-05 15:00:01 - [TEST_STEP][PASSED] - setText: Text 'sanrao@calliduscloud.com' is set on object 'Object Repository/Page_Sales Performance Home/input_username'
+
+2018-09-05 15:00:02 - [MESSAGE][PASSED] - Text 'sanrao@calliduscloud.com' is set on object 'Object Repository/Page_Sales Performance Home/input_username'
+
+2018-09-05 15:00:02 - [TEST_STEP][FAILED] - setEncryptedText: Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)
+
+2018-09-05 15:00:03 - [MESSAGE][FAILED] - Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)
+[[ATTACHMENT|C:\\Users\\sanrao\\git\\UAT_Commission\\Reports\\TestDemo\\20180905_145939\\1536139802733.png]]]]></system-out>
+         <system-err><![CDATA[2018-09-05 14:59:43 - [TEST_CASE][FAILED] - Test Cases/Commission Login: Test Cases/Commission Login FAILED because (of) Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-09-05 14:59:42 - [TEST_SUITE][FAILED] - TestDemo: Test Cases/Commission Login FAILED because (of) Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)]]></system-out>
+      <system-err><![CDATA[2018-09-05 14:59:42 - [TEST_SUITE][FAILED] - TestDemo: Test Cases/Commission Login FAILED because (of) Unable to set encrypted text for object 'Object Repository/Page_Sales Performance Home/input_password' (Root cause: javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher)]]></system-err>
+   </testsuite>
+</testsuites>
