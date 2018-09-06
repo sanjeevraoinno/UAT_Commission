@@ -31,5 +31,21 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Earning Codes'
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Earning Code id'), 3)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Earning Code id'))
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), "commission")
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
