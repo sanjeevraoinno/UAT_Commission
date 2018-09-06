@@ -21,31 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
+not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Manage Set up_Link'))
 
-WebUI.delay(5)
+WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
 
 WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/Reason Codes'), 8)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Reason Codes'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Reason Codes'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+//WebUI.selectOptionByValue(findTestObject('Page_Callidus Cloud Commissions Man/Field Name combo box'), 'ID', false)
+//WebUI.selectOptionByValue(findTestObject('Page_Callidus Cloud Commissions Man/Comparision combo box'), '=', false)
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-not_run: WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Earning Code id'), 8)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/ID'), 3)
 
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Earning Code id'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/ID'))
 
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Comparision combo box'))
 
-not_run: WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/CB_equals'), 2)
 
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/CB_equals'))
 
-not_run: WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'commission')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Test RC')
 
-not_run: WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/Apply Button'))
 
-not_run: WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
