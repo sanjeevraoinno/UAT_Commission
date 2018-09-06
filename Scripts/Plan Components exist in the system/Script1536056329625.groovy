@@ -27,10 +27,23 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Plan
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Plan Components'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'Aggregated Revenue against Territory based on Flat Rate', 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Plan Components'), 4)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Plan Components'))
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Aggregated Revenue against Territory based on Flat Rate')
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

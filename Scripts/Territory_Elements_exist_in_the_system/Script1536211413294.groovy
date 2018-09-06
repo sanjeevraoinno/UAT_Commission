@@ -19,21 +19,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Commission Login'), [('CallidusPortalUrl') : 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'
+        , ('CallidusUser') : 'rkulkarn@calliduscloud.com', ('CallidusPassword') : 'Augg@1234'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_ADMINISTRATION'))
+WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'), 7)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Plan Components'), 1)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Position Groups'))
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_Territory'), 6)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Territory'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'), 3)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Territory'), 4)
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Position Groups'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Territory'))
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
 
@@ -41,9 +44,7 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'P_G_Demo1')
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Territory_Demo')
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
