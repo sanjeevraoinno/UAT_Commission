@@ -46,5 +46,7 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'R_T_Demo1')
 
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
