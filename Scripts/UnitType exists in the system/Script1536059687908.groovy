@@ -33,9 +33,25 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Unit Types'))
 
 WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/input_Enter Search Terms'), 'USD')
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_spotlight-search'))
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Search'))
 
 WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/a_UnitTypeId'), 4)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_UnitTypeId'))
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Comparision'))
+
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'), 2)
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
+
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'USD')
+
+WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

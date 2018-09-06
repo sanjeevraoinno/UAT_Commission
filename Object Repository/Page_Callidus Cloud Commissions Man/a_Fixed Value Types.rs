@@ -6,49 +6,57 @@
    <elementGuidId>b91f28ef-8709-4ba0-8faa-bf56c488b628</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//a[@id='ember2485'][count(. | //a[@id = 'ember2894' and @class = 'ember-view' and @href = '#/fixedvaluetype/list' and @aria-describedby = 'ui-tooltip-4' and (text() = '  Fixed Value Types ' or . = '  Fixed Value Types ')]) = count(//a[@id = 'ember2894' and @class = 'ember-view' and @href = '#/fixedvaluetype/list' and @aria-describedby = 'ui-tooltip-4' and (text() = '  Fixed Value Types ' or . = '  Fixed Value Types ')])]</value>
+         <value>//div[@class='app-subdiv']/a[@href='#/fixedvaluetype/list']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>ember2894</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>ember-view</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>#/fixedvaluetype/list</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
       <value>ui-tooltip-4</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -59,6 +67,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@id='ember2485']</value>
+      <value>//div[@class='app-subdiv']/a[@href='#/fixedvaluetype/list']</value>
    </webElementProperties>
 </WebElementEntity>
