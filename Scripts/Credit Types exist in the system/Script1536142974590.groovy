@@ -43,11 +43,9 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), "Bonus")
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Bonus123')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
-
-WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

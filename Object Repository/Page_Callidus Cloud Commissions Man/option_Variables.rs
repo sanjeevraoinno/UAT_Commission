@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//option[@value='referenceClassType']</value>
+         <value>//option[@value='name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//option[@value='referenceClassType']</value>
+      <value>//option[@value='name']</value>
    </webElementProperties>
 </WebElementEntity>

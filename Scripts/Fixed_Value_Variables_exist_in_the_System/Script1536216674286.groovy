@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Searc
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'), 5)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'), 4)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'))
 
@@ -44,11 +44,7 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Value_scroll'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_FixedvalueVariable'), 1)
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_FixedvalueVariable'))
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Var_FV_Demo1')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
 
