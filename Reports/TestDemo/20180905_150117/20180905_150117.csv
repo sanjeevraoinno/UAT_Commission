@@ -1,5 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-TestDemo,,,2018-09-05 15:01:20,2018-09-05 15:01:22,2.682s,FAILED
-,,,,,,
-Test Cases/Commission Login,,,2018-09-05 15:01:20,2018-09-05 15:01:22,2.019s,FAILED
-openBrowser,,,2018-09-05 15:01:21,2018-09-05 15:01:22,1.419s,FAILED

@@ -1,5 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
-TestDemo,Chrome 68.0.3440.106,,2018-09-05 15:27:40,2018-09-05 15:28:52,1m - 12.532s,FAILED
-,,,,,,
-Test Cases/Earning Codes exist in the system,Chrome 68.0.3440.106,,2018-09-05 15:27:40,2018-09-05 15:28:52,1m - 11.147s,FAILED
-callTestCase,Chrome 68.0.3440.106,,2018-09-05 15:27:41,2018-09-05 15:28:52,1m - 10.632s,FAILED
