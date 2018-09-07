@@ -19,8 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Commission Login'), [('CallidusPortalUrl') : 'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'
-        , ('CallidusUser') : 'rkulkarn@calliduscloud.com', ('CallidusPassword') : 'Augg@1234'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Callidus Cloud Commissions Man/div_PLAN'))
 
@@ -34,7 +33,7 @@ WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/a_Advanced Searc
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Field Name'))
 
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'), 5)
+WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'), 4)
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Variables'))
 
@@ -44,13 +43,11 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/td_Value_scroll'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option_RateTableVariables'), 2)
-
-WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_RateTableVariables'))
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'Var_RT_Demo2')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
