@@ -2,6 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -18,6 +19,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.callTestCase(findTestCase('Commission Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -47,9 +49,13 @@ WebUI.scrollToElement(findTestObject('Page_Callidus Cloud Commissions Man/option
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/option_Equals'))
 
-WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'DR Base Commissions Flat Rate MTD')
+WebUI.setText(findTestObject('Page_Callidus Cloud Commissions Man/td_Value'), 'CR Territory Booking')
 
 WebUI.click(findTestObject('Page_Callidus Cloud Commissions Man/input_Apply Search'))
+
+attribute = WebUI.getAttribute(findTestObject('Page_Callidus Cloud Commissions Man/td_No Records Found.'), 'text')
+
+WebUI.verify(attribute, 'No Records Found.', true)
 
 WebUI.callTestCase(findTestCase('Commission Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

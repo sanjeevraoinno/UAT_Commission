@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Callidus Environment</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://biz3-tst.callidusondemand.com/SalesPortal/#!/'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'sanrao@calliduscloud.com'</initValue>
+      <name>PortalLogin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'India987&amp;'</initValue>
+      <name>PortalPassword</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
